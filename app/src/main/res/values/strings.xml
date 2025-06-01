@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App-ToDoList</string>
+    <string name="organize_sua_mente_comece_agora">Organize sua mente. Comece agora.</string>
+    <string name="salvar">Salvar</string>
+    <string name="detalhes_da_anota_o">Detalhes da anotação</string>
+    <string name="t_tulo_da_anota_o">Título da anotação</string>
+    <string name="mais_detalhes_opcional">Mais detalhes (opcional)</string>
+    <string name="o_que_precisa_ser_feito">O que precisa ser feito?</string>
+</resources>
