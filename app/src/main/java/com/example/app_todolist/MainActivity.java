@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             String title = inputTitle.getText().toString().trim();
             String descricao = inputDescription.getText().toString().trim();
 
-            if (!title.isEmpty() && !descricao.isEmpty()) {
+            if (!title.isEmpty()) {
                 Task novaTask = new Task(title, descricao);
                 taskList.add(novaTask);
                 adapter.notifyItemInserted(taskList.size() - 1);
