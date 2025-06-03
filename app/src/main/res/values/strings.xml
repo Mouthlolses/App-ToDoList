@@ -6,4 +6,6 @@
     <string name="t_tulo_da_anota_o">Título da anotação</string>
     <string name="mais_detalhes_opcional">Mais detalhes (opcional)</string>
     <string name="o_que_precisa_ser_feito">O que precisa ser feito?</string>
+    <string name="descri_o">Descrição</string>
+    <string name="titulo">Tarefa</string>
 </resources>
