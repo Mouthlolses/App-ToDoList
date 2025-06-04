@@ -13,11 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app_todolist.databinding.ActivityMainBinding;
-import com.example.app_todolist.recyclerview.adapter.Task;
+import com.example.app_todolist.model.Task;
 import com.example.app_todolist.recyclerview.adapter.TaskAdapter;
 import com.google.android.material.textfield.TextInputEditText;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;

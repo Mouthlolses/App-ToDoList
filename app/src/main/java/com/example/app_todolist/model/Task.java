@@ -1,4 +1,4 @@
-package com.example.app_todolist.recyclerview.adapter;
+package com.example.app_todolist.model;
 
 public class Task {
     private String title;

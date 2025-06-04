@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app_todolist.R;
+import com.example.app_todolist.model.Task;
 
 import java.util.List;
 
