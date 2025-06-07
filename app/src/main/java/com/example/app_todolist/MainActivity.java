@@ -52,18 +52,21 @@ public class MainActivity extends AppCompatActivity {
             String title = inputTitle.getText().toString().trim();
             String descricao = inputDescription.getText().toString().trim();
 
-            if (!title.isEmpty()) {
-                Task novaTask = new Task(title, descricao);
-                taskList.add(novaTask);
-                adapter.notifyItemInserted(taskList.size() - 1);
-                recyclerView.scrollToPosition(taskList.size() - 1);
-
-                inputTitle.setText("");
-                inputDescription.setText("");
-
-            } else {
-                Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+            if (title.isEmpty()) {
+                Toast.makeText(this, "Insira o título", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+            Task novaTask = descricao.isEmpty()
+                    ? new Task(title, null)
+                    : new Task(title, descricao);
+
+            taskList.add(novaTask);
+            adapter.notifyItemInserted(taskList.size() - 1);
+            recyclerView.scrollToPosition(taskList.size() - 1);
+
+            inputTitle.setText("");
+            inputDescription.setText("");
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
